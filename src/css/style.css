@@ -1,0 +1,271 @@
+:root{
+    --Preto--escuro : #140f07;
+    --Azul--escuro: #192746;
+    --Azul--claro: #485ca1;
+    --Azul--ciano: #899afb;
+    --Azul--marcado: #001aff;
+    --Branco: #dde1f6;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+    box-sizing: border-box;
+}
+.marcado{
+    color: var(--Azul--marcado);
+}
+
+body{
+    background-color: var(--Branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header > nav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav > ul{
+    list-style: none;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 85vh;
+    background-color: var(--Azul--escuro);
+}
+article{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--Branco);
+}
+.intro{
+    width: 60%;
+}
+.linha{
+    width: 60%;
+    height: 5px;
+    background-color: var(--Azul--ciano);
+    border-radius: 2px;
+}
+.intro > h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+.sub{
+
+    width: 60%;
+}
+.textosub{
+    text-align: start;
+    width: 60%;         
+}
+mark{
+    background: none;
+    color: var(--Azul--ciano);
+    font-weight: 600;
+}
+.botao{
+    width: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    transition: 0.2s ease;
+}
+.botao > a{
+    text-decoration: none;
+    color: var(--Branco);
+    border: 2px solid var(--Azul--ciano);
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.botao:hover{
+    transform: scale(1.05);
+    margin-left: 2%;
+}
+
+aside{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside > .imgAside{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgAside > img{
+    width: 60%;
+}
+
+aside > .redes{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.redes > .navRedes{
+    height: 100%;
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navRedes > .ulRedes{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.ulRedes > .liRedes{
+    font-size: 30px;
+    transition: 0.3s;
+}
+.liRedes:hover{
+    transform: scale(1.1);
+}
+.liRedes > a{
+    text-decoration: none;
+    color: var(--Branco);
+   
+}
+/* fim da main */
+
+/* inicio sobre */
+
+.sobreEu{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sobreEu .esquerdaSobre{
+    width: 50%;
+    height: 100%;
+    color: var(--Preto--escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.esquerdaSobre > section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+}
+.linha2{
+    width: 80%;
+    height: 1%;
+    border-radius: 2px;
+    background-color: var(--Azul--escuro);
+}
+.miniBio{
+    text-align: left;
+}
+.sobreEu > .direitaSobre{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+.direitaSobre .img1{
+   
+    width: 30%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img1 img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.direitaSobre .img2{
+   
+    width: 30%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img2 img{
+    width: 100%;
+   height: 90%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.direitaSobre .img3{
+    
+    width: 30%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.direitaSobre .img4{
+    
+    width: 30%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
